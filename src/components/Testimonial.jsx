@@ -6,31 +6,31 @@ import "aos/dist/aos.css";
 
 const trainers = [
   {
-    name: "BLAKE HUDSON",
+    name: "Personal Trainer",
     role: "Strength & Conditioning Coach",
     image:
       "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800",
   },
   {
-    name: "ALEX HARRINGTON",
+    name: "Personal Trainer",
     role: "Holistic Fitness & Mobility Coach",
     image:
       "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?q=80&w=800",
   },
   {
-    name: "NICHOLAS PHILLIPS",
+    name: "Personal Trainer",
     role: "Fat Loss & HIIT Expert",
     image:
       "https://images.unsplash.com/photo-1594737625785-cbdbf7b6b2e2?q=80&w=800",
   },
   {
-    name: "LOUIS CHAVEZ",
+    name: "Personal Trainer",
     role: "Transformation Coach",
     image:
       "https://images.unsplash.com/photo-1594737625785-cbdbf7b6b2e2?q=80&w=800",
   },
   {
-    name: "EMILY TURNER",
+    name: "Personal Trainer",
     role: "Yoga & Wellness Instructor",
     image:
       "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800",
@@ -92,17 +92,17 @@ export default function TrainersSection() {
           {trainers.map((trainer, index) => (
             <div
               key={index}
-              className="w-64 bg-[#111] rounded-xl border border-gray-200  overflow-hidden flex-shrink-0 shadow-lg hover:scale-105 transition-transform duration-300"
+              className="w-64 h-80 bg-[#111] rounded-xl border border-gray-200  overflow-hidden flex-shrink-0 shadow-lg hover:scale-105 transition-transform duration-300"
               data-aos="zoom-in"
               data-aos-delay={index * 150}
             >
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800"
+                  src="/logo.png"
                   alt={trainer.name}
-                  className="h-80 w-full object-cover"
+                  className="h-40 w-65 mx-auto mt-10 object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full bg-black/80 p-4">
+                <div className="absolute top-50 left-0 w-full bg-black/80 p-4">
                   <h3 className="text-lg font-bold text-white tracking-wide">
                     {trainer.name}
                   </h3>
